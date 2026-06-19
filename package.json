@@ -1,9 +1,9 @@
 {
-  "name": "my-portfolio",
+  "name": "darkboy0p-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/your-repo-name",
+  "homepage": "https://darkboy0p.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
