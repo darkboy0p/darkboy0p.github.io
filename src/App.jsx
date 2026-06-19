@@ -1,24 +1,20 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="bg-slate-50 text-slate-800 font-sans antialiased">
+    <div className="bg-white text-slate-800 font-sans">
       <Navbar />
-      <main>
-        <Hero />
-        <Projects />
-        <About />
-        <Contact />
-      </main>
+      <Hero />
+      <About />
+      <Contact />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
