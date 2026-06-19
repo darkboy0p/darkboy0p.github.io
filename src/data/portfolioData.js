@@ -1,80 +1,89 @@
-export const personalInfo = {
-  name: 'Mahdi',
-  title: 'Full-Stack Developer',
-  email: 'mahdi@example.com', // Replace with your actual email
-  location: 'Narsingdi, Bangladesh',
-  phone: '+880 1XXX-XXXXXX', // Replace with your actual phone
-  resumeLink: '/resume.pdf',
-  tagline: 'A passionate full-stack developer from Bangladesh crafting clean, user-centric digital experiences.',
-  social: {
-    github: 'https://github.com/darkboy0p',
-    linkedin: 'https://linkedin.com/in/yourusername', // Replace with your LinkedIn
-    twitter: 'https://twitter.com/yourusername', // Replace with your Twitter
-  }
+// Add these to your existing portfolioData.js file
+
+export const aboutMe = {
+  headline: "Frontend Developer | Landing Page Specialist",
+  description: "I craft ultra-fast, visually stunning landing pages and portfolios that help businesses and professionals stand out. Based in Narsingdi, Bangladesh, I combine clean code with modern design to deliver pixel-perfect websites that load instantly and look great on every device.",
+  paragraphs: [
+    "I'm Mahdi, a frontend developer with a laser focus on creating landing pages and portfolio websites that convert visitors into clients. My passion lies in transforming ideas into clean, responsive interfaces using React and Tailwind CSS. I don't just build websites—I craft digital experiences that reflect your brand's identity and leave lasting impressions.",
+    "What sets me apart is my obsession with performance and design precision. Every project I deliver is optimized for speed, mobile responsiveness, and visual appeal. I believe your online presence should work as hard as you do, which is why I focus exclusively on frontend excellence.",
+    "Working with clients worldwide from my home in Narsingdi, I bring a fresh perspective to every project. Whether you need a stunning landing page for your product or a professional portfolio to showcase your work, I deliver clean, modern code that's easy to maintain and built to impress."
+  ]
 };
 
-export const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'About', href: '#about' },
-  { name: 'Contact', href: '#contact' },
-];
-
-export const projects = [
-  {
-    id: 1,
-    title: 'E-Commerce Dashboard',
-    description: 'A comprehensive admin dashboard for managing online stores. Solved the problem of fragmented sales data by providing real-time analytics and inventory tracking in one unified interface.',
-    problemSolved: 'Fragmented sales data across multiple platforms',
-    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
-    image: '/images/projects/ecommerce-dashboard.jpg',
-    live: '#',
-    github: '#',
-  },
-  {
-    id: 2,
-    title: 'TaskFlow App',
-    description: 'A collaborative project management tool built to streamline team workflows. Addressed communication gaps by integrating real-time chat, task assignments, and progress tracking.',
-    problemSolved: 'Team communication gaps in project management',
-    tags: ['React', 'Firebase', 'Tailwind', 'Redux'],
-    image: '/images/projects/taskflow-app.jpg',
-    live: '#',
-    github: '#',
-  },
-  {
-    id: 3,
-    title: 'Portfolio Generator',
-    description: 'A dynamic tool that helps developers create stunning portfolios in minutes. Solved the challenge of time-consuming portfolio creation with customizable templates and one-click deployment.',
-    problemSolved: 'Time-consuming portfolio creation process',
-    tags: ['Next.js', 'Tailwind', 'PostgreSQL', 'Prisma'],
-    image: '/images/projects/portfolio-generator.jpg',
-    live: '#',
-    github: '#',
-  },
-];
-
-export const skills = [
-  {
-    icon: 'Code2',
-    title: 'Clean Code',
-    description: 'I write maintainable, scalable code with a focus on best practices and performance optimization.'
-  },
+export const services = [
   {
     icon: 'Palette',
-    title: 'Design Sensibility',
-    description: 'I bridge the gap between design and development, ensuring pixel-perfect implementations.'
+    title: 'Custom Landing Pages',
+    description: 'High-converting, visually stunning landing pages designed to captivate your audience and drive results. Built with React and Tailwind CSS for maximum performance.',
+    features: [
+      'Pixel-perfect responsive design',
+      'Lightning-fast load times',
+      'SEO-optimized structure',
+      'Modern animations & interactions',
+      'Contact form integration'
+    ],
+    turnaround: '2-3 Days Delivery',
+    price: 'Starting at 800 BDT'
   },
   {
     icon: 'Zap',
-    title: 'Fast & Responsive',
-    description: 'Every project I build is optimized for speed and works flawlessly on any device.'
+    title: 'Personal Portfolio Sites',
+    description: 'Stand out from the crowd with a professional portfolio that showcases your work beautifully. Perfect for developers, designers, photographers, and freelancers.',
+    features: [
+      'Clean, modern layouts',
+      'Project showcase sections',
+      'Smooth scrolling navigation',
+      'Mobile-first responsive design',
+      'Social media integration'
+    ],
+    turnaround: '3-4 Days Delivery',
+    price: 'Starting at 800 BDT'
   },
+  {
+    icon: 'Code2',
+    title: 'Landing Page Redesign',
+    description: 'Transform your existing landing page into a modern, high-performance experience. I refresh outdated designs with current trends and better functionality.',
+    features: [
+      'Performance optimization',
+      'UI/UX improvements',
+      'Mobile responsiveness fix',
+      'Modern design refresh',
+      'Code cleanup & optimization'
+    ],
+    turnaround: '1-2 Days Delivery',
+    price: 'Starting at 800 BDT'
+  }
 ];
 
-export const bio = {
-  paragraphs: [
-    "I'm Mahdi, a full-stack developer from Narsingdi, Bangladesh with a passion for building digital products that make a real impact. My journey into tech started with a curiosity about how websites work, which quickly turned into a passion for creating seamless user experiences.",
-    "Based in Narsingdi Sadar, I work remotely with clients worldwide. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community in Bangladesh.",
-    "I specialize in React ecosystem, Node.js, and cloud services, with a growing interest in AI integrations and serverless architectures. My goal is to build technology that is not only functional but also intuitive and accessible to everyone."
-  ]
-};
+export const uniqueSellingPoints = [
+  {
+    title: 'Lightning Fast Delivery',
+    description: 'Get your professional landing page or portfolio live in just 2-4 days. I prioritize fast turnaround without compromising quality.',
+    icon: 'Zap'
+  },
+  {
+    title: 'Pure Frontend Excellence',
+    description: 'I specialize exclusively in frontend development. No distractions, no backend complexity—just beautiful, fast-loading websites.',
+    icon: 'Code2'
+  },
+  {
+    title: 'Mobile-First Design',
+    description: 'Every site I build looks and works perfectly on all devices. Your visitors get a seamless experience whether on phone, tablet, or desktop.',
+    icon: 'Palette'
+  },
+  {
+    title: 'Clean, Modern Code',
+    description: 'I write maintainable, well-structured code using React and Tailwind CSS. Easy to update, scale, and built to last.',
+    icon: 'Code2'
+  },
+  {
+    title: 'SEO Optimized',
+    description: 'Your landing page will be built with search engines in mind, helping you get discovered by your target audience.',
+    icon: 'Zap'
+  },
+  {
+    title: 'Affordable & Professional',
+    description: 'Get a premium, professional website at Bangladesh-friendly rates. Quality work that fits your budget, starting at just 800 BDT.',
+    icon: 'Palette'
+  }
+];
