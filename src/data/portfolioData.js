@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: 'Mahdi',
   title: 'Frontend Developer',
-  email: 'mahdi@example.com',
+  email: 'wardengamerofficial@gmail.com',
   location: 'Narsingdi, Bangladesh',
-  phone: '+880 1XXX-XXXXXX',
+  phone: '',
   tagline: 'I build fast, responsive landing pages and portfolios that help you stand out online.',
   social: {
     github: 'https://github.com/darkboy0p',
