@@ -1,15 +1,15 @@
 export const personalInfo = {
-  name: 'Alex Chen',
+  name: 'Mahdi',
   title: 'Full-Stack Developer',
-  email: 'alex.chen@example.com',
-  location: 'San Francisco, CA',
-  phone: '+1 (555) 123-4567',
+  email: 'mahdi@example.com', // Replace with your actual email
+  location: 'Narsingdi, Bangladesh',
+  phone: '+880 1XXX-XXXXXX', // Replace with your actual phone
   resumeLink: '/resume.pdf',
-  tagline: 'A passionate full-stack developer crafting clean, user-centric digital experiences.',
+  tagline: 'A passionate full-stack developer from Bangladesh crafting clean, user-centric digital experiences.',
   social: {
-    github: 'https://github.com/yourusername',
-    linkedin: 'https://linkedin.com/in/yourusername',
-    twitter: 'https://twitter.com/yourusername',
+    github: 'https://github.com/darkboy0p',
+    linkedin: 'https://linkedin.com/in/yourusername', // Replace with your LinkedIn
+    twitter: 'https://twitter.com/yourusername', // Replace with your Twitter
   }
 };
 
@@ -73,8 +73,8 @@ export const skills = [
 
 export const bio = {
   paragraphs: [
-    "I'm a full-stack developer with over 5 years of experience building digital products that make a real impact. My journey into tech started with a curiosity about how websites work, which quickly turned into a passion for creating seamless user experiences.",
-    "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge through blog posts and mentoring. I believe in continuous learning and the power of community-driven development.",
+    "I'm Mahdi, a full-stack developer from Narsingdi, Bangladesh with a passion for building digital products that make a real impact. My journey into tech started with a curiosity about how websites work, which quickly turned into a passion for creating seamless user experiences.",
+    "Based in Narsingdi Sadar, I work remotely with clients worldwide. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community in Bangladesh.",
     "I specialize in React ecosystem, Node.js, and cloud services, with a growing interest in AI integrations and serverless architectures. My goal is to build technology that is not only functional but also intuitive and accessible to everyone."
   ]
 };
