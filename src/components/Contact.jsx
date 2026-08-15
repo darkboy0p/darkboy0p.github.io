@@ -125,4 +125,22 @@ const Contact = () => {
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
                 required
-                className="w-full px-4 py-3 bg-white/5 border border-border rounded-lg focus:out
+                className="w-full px-4 py-3 bg-white/5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all text-text-primary placeholder:text-text-muted resize-none"
+              />
+            </div>
+            
+            <button 
+              type="submit" 
+              className="w-full bg-accent text-white px-6 py-3.5 rounded-lg font-semibold hover:bg-accent-secondary transition-all hover:shadow-lg hover:shadow-accent/25 flex items-center justify-center gap-2 group"
+            >
+              <span>Send Message</span>
+              <Send className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Contact
