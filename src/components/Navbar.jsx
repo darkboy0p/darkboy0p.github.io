@@ -1,47 +1,82 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Menu, X, Code2 } from 'lucide-react'
 import { personalInfo, navLinks } from '../data/portfolioData'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? 'bg-background/90 backdrop-blur-xl border-b border-border' : 'bg-transparent'
+    }`}>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="flex items-center space-x-2 text-slate-800 font-bold text-xl">
-            <Code2 className="h-6 w-6" />
-            <span>{personalInfo.name}</span>
+          <a href="#home" className="flex items-center space-x-2 text-text-primary font-bold text-xl group">
+            <Code2 className="h-5 w-5 text-accent group-hover:rotate-6 transition-transform" />
+            <span className="tracking-tight">{personalInfo.name.toLowerCase()}.</span>
           </a>
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="text-slate-600 hover:text-slate-900 text-sm font-medium">
+              <a 
+                key={link.name} 
+                href={link.href} 
+                className="text-text-secondary hover:text-text-primary text-sm font-medium transition-colors relative group"
+              >
                 {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </a>
             ))}
-            <a href="#contact" className="bg-slate-800 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-slate-700">
-              Hire Me
+            <a 
+              href="#contact" 
+              className="bg-accent text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-accent-secondary transition-all hover:shadow-lg hover:shadow-accent/25"
+            >
+              Let's Talk ↗
             </a>
           </div>
 
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-slate-600">
+          <button 
+            onClick={() => setIsOpen(!isOpen)} 
+            className="md:hidden text-text-primary hover:text-accent transition-colors"
+            aria-label="Toggle menu"
+          >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
-        {isOpen && (
-          <div className="md:hidden pb-4">
+        {/* Mobile menu */}
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ${
+          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        }`}>
+          <div className="py-4 border-t border-border space-y-3">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="block py-2 text-slate-600" onClick={() => setIsOpen(false)}>
+              <a 
+                key={link.name} 
+                href={link.href} 
+                className="block text-text-secondary hover:text-text-primary text-base font-medium transition-colors py-1"
+                onClick={() => setIsOpen(false)}
+              >
                 {link.name}
               </a>
             ))}
-            <a href="#contact" className="block mt-2 bg-slate-800 text-white px-5 py-2 rounded-lg text-center text-sm font-semibold" onClick={() => setIsOpen(false)}>
-              Hire Me
+            <a 
+              href="#contact" 
+              className="block bg-accent text-white px-5 py-2.5 rounded-lg text-center text-sm font-semibold hover:bg-accent-secondary transition-all"
+              onClick={() => setIsOpen(false)}
+            >
+              Let's Talk ↗
             </a>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   )
