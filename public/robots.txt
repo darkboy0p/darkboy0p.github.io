@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://darkboy0p.github.io/sitemap.xml
