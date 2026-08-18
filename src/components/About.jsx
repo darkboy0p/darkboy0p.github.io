@@ -1,6 +1,6 @@
 import React from 'react'
 import { CheckCircle, Clock } from 'lucide-react'
-import { personalInfo, services, timeline } from '../data/portfolioData'
+import { personalInfo, services, timeline, projects } from '../data/portfolioData'
 
 const About = () => {
   return (
@@ -91,8 +91,5 @@ const About = () => {
     </section>
   )
 }
-
-// Need to import projects for stats
-import { projects } from '../data/portfolioData'
 
 export default About
