@@ -8,7 +8,7 @@ export const personalInfo = {
   description: `I'm a frontend developer focused on modern websites, web applications, and digital products. I enjoy turning ideas into real, working things — from landing pages to full Discord ecosystems.`,
   social: {
     github: 'https://github.com/darkboy0p',
-    discord: 'https://discord.com/users/your-discord-id',
+    discord: 'https://discord.com/users/1094977282612924487',
     email: 'mailto:wardengamerofficial@gmail.com',
   }
 }
@@ -26,7 +26,7 @@ export const services = [
     title: 'Web Development',
     description: 'Modern responsive websites and web applications built with React, Tailwind CSS, and JavaScript.',
     features: ['Fast loading', 'Mobile responsive', 'SEO optimized'],
-    price: '800 ৳',
+    price: '30000 ৳',
     turnaround: '2-3 Days'
   },
   {
@@ -34,7 +34,7 @@ export const services = [
     title: 'UI / UX',
     description: 'Clean, intuitive interfaces focused on usability and visual hierarchy.',
     features: ['Clean design', 'User-centered', 'Interactive prototypes'],
-    price: '800 ৳',
+    price: '4000 ৳',
     turnaround: '3-4 Days'
   },
   {
