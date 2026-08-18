@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Mail, MapPin, Github, Discord, Send, ArrowRight } from 'lucide-react'
+import { Mail, MapPin, Github, MessageSquare, Send, ArrowRight } from 'lucide-react'
 import { personalInfo } from '../data/portfolioData'
 
 const Contact = () => {
@@ -66,7 +66,7 @@ const Contact = () => {
 
             <div className="card-glass p-6 flex items-center gap-4 group">
               <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                <Discord className="h-5 w-5 text-accent" />
+                <MessageSquare className="h-5 w-5 text-accent" />
               </div>
               <div>
                 <div className="text-text-muted text-sm">Discord</div>
