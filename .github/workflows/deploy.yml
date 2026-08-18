@@ -1,3 +1,4 @@
+# .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
@@ -24,10 +25,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          # Updated from '18' to '24'
+          node-version: '24'
           cache: 'npm'
       
       - name: Install dependencies
+        # This will now use Node.js 24 and the lock file
         run: npm ci
       
       - name: Build
