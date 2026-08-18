@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Github, Mail, Discord, MapPin } from 'lucide-react'
+import { ArrowRight, Github, Mail, MessageSquare, MapPin } from 'lucide-react'
 import { personalInfo } from '../data/portfolioData'
 
 const Hero = () => {
@@ -53,7 +53,7 @@ const Hero = () => {
                 className="text-text-secondary hover:text-text-primary transition-colors"
                 aria-label="Discord"
               >
-                <Discord className="h-5 w-5" />
+                <MessageSquare className="h-5 w-5" />
               </a>
               <a 
                 href={personalInfo.social.email} 
