@@ -1,5 +1,5 @@
 import React from 'react'
-import { Github, Mail, Discord, Heart } from 'lucide-react'
+import { Github, Mail, MessageSquare, Heart } from 'lucide-react'
 import { personalInfo } from '../data/portfolioData'
 
 const Footer = () => {
@@ -33,7 +33,7 @@ const Footer = () => {
               className="text-text-muted hover:text-text-primary transition-colors"
               aria-label="Discord"
             >
-              <Discord className="h-4 w-4" />
+              <MessageSquare className="h-4 w-4" />
             </a>
             <a 
               href={personalInfo.social.email} 
